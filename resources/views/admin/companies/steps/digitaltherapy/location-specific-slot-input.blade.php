@@ -1,0 +1,1 @@
+{{ Form::hidden("location_specific_slots[$location_id][$key][$date_input][time][$id]", $start_time . '-' . $end_time, ['class' => 'start-time-data location-slots ls_slots_'.$location_id.'_'.$key.' location_slots_'.$location_id.'_'.$key.'_'.$datestamp.'', 'loctionid' => $location_id, 'wsid' => $key, 'datestamp' => $datestamp, 'id' => $id, 'data-date' => $date_input]) }}

@@ -1,0 +1,45 @@
+<?php
+
+namespace App\Events;
+
+use Illuminate\Broadcasting\Channel;
+use Illuminate\Broadcasting\InteractsWithSockets;
+use Illuminate\Broadcasting\PrivateChannel;
+use Illuminate\Foundation\Events\Dispatchable;
+
+class IntercompanyChallengeExportEvent
+{
+    use Dispatchable, InteractsWithSockets;
+
+    public $user;
+    public $challenge;
+    public $tempPath;
+    public $payload;
+    public $challengeExportHistory;
+    public $fileName;
+
+    /**
+     * Create a new event instance.
+     *
+     * @return void
+     */
+    public function __construct($user, $challenge, $tempPath, $payload, $challengeExportHistory, $fileName)
+    {
+        $this->user                   = $user;
+        $this->challenge              = $challenge;
+        $this->tempPath               = $tempPath;
+        $this->payload                = $payload;
+        $this->challengeExportHistory = $challengeExportHistory;
+        $this->fileName               = $fileName;
+    }
+
+    /**
+     * Get the channels the event should broadcast on.
+     *
+     * @return \Illuminate\Broadcasting\Channel|array
+     */
+    public function broadcastOn()
+    {
+        return new PrivateChannel('channel-name');
+    }
+}

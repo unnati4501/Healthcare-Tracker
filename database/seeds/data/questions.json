@@ -1,0 +1,913 @@
+[{
+    "category_id": 1,
+    "sub_category_id": 1,
+    "question_type_id": 1,
+    "title": "Do you regularly walk or cycle for over 10 minutes to travel to or from work?",
+    "max_score": 5,
+    "options": [{
+        "score": 5,
+        "choice": "Yes"
+    }, {
+        "score": 0,
+        "choice": "No"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 1,
+    "question_type_id": 1,
+    "title": "Does your work involve vigorous-intensity activity that causes large increases in breathing?",
+    "max_score": 7,
+    "options": [{
+        "score": 7,
+        "choice": "Yes"
+    }, {
+        "score": 0,
+        "choice": "No"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 1,
+    "question_type_id": 1,
+    "title": "How many minutes per week do you do moderate intensity activity (brisk walking, cycling etc.)?",
+    "max_score": 10,
+    "options": [{
+        "score": -5,
+        "choice": "<50"
+    }, {
+        "score": -2,
+        "choice": "50-100"
+    }, {
+        "score": 0,
+        "choice": "100-150"
+    }, {
+        "score": 8,
+        "choice": "150-200"
+    }, {
+        "score": 10,
+        "choice": ">200"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 1,
+    "question_type_id": 1,
+    "title": "How many minutes per week do you do high intensity activity (running, sport, lifting weights, etc.)?",
+    "max_score": 10,
+    "options": [{
+        "score": -5,
+        "choice": "0"
+    }, {
+        "score": -2,
+        "choice": "0-30"
+    }, {
+        "score": 5,
+        "choice": "30-60"
+    }, {
+        "score": 8,
+        "choice": "60-90"
+    }, {
+        "score": 10,
+        "choice": "90+"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 1,
+    "question_type_id": 1,
+    "title": "How many hours do you usually spend sitting or reclining on a typical day (commute, work, meals, tv, etc.)?",
+    "max_score": 10,
+    "options": [{
+        "score": 10,
+        "choice": "0-1"
+    }, {
+        "score": 7,
+        "choice": "1-3"
+    }, {
+        "score": 5,
+        "choice": "3-6"
+    }, {
+        "score": -2,
+        "choice": "6-9"
+    }, {
+        "score": -5,
+        "choice": "9+"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 2,
+    "question_type_id": 1,
+    "title": "In the last month, how many hours of sleep do you get on an average night?",
+    "max_score": 10,
+    "options": [{
+        "score": -10,
+        "choice": "<4"
+    }, {
+        "score": -7,
+        "choice": "4-5"
+    }, {
+        "score": -5,
+        "choice": "5-6"
+    }, {
+        "score": -3,
+        "choice": "6-7"
+    }, {
+        "score": 10,
+        "choice": "7-9"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 2,
+    "question_type_id": 1,
+    "title": "In the last month, how much has lack/poor quality sleep negatively affected your mood?",
+    "max_score": 7,
+    "options": [{
+        "score": -3,
+        "choice": "most days"
+    }, {
+        "score": 0,
+        "choice": "2-3 times per week"
+    }, {
+        "score": 2,
+        "choice": "1-2 time per week"
+    }, {
+        "score": 5,
+        "choice": "2-3 times a month"
+    }, {
+        "score": 7,
+        "choice": "Rarely, if ever"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 2,
+    "question_type_id": 1,
+    "title": "In the last month how often do you have trouble falling to sleep?",
+    "max_score": 7,
+    "options": [{
+        "score": -3,
+        "choice": "most days"
+    }, {
+        "score": 0,
+        "choice": "2-3 times per week"
+    }, {
+        "score": 2,
+        "choice": "1-2 time per week"
+    }, {
+        "score": 5,
+        "choice": "2-3 times a month"
+    }, {
+        "score": 7,
+        "choice": "Rarely, if ever"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 2,
+    "question_type_id": 1,
+    "title": "In the last month, during your wake time, how often do you feel tired and/or fatigued?",
+    "max_score": 7,
+    "options": [{
+        "score": -3,
+        "choice": "most days"
+    }, {
+        "score": 0,
+        "choice": "2-3 times per week"
+    }, {
+        "score": 2,
+        "choice": "1-2 time per week"
+    }, {
+        "score": 5,
+        "choice": "2-3 times a month"
+    }, {
+        "score": 7,
+        "choice": "Rarely, if ever"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 2,
+    "question_type_id": 1,
+    "title": "In the last month, how much has lack/poor quality sleep negatively affected your performance/productivity in work?",
+    "max_score": 7,
+    "options": [{
+        "score": -3,
+        "choice": "most days"
+    }, {
+        "score": 0,
+        "choice": "2-3 times per week"
+    }, {
+        "score": 2,
+        "choice": "1-2 time per week"
+    }, {
+        "score": 5,
+        "choice": "2-3 times a month"
+    }, {
+        "score": 7,
+        "choice": "Rarely, if ever"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 3,
+    "question_type_id": 1,
+    "title": "How many 'fistful' size portions of vegtables do you have on an average day?",
+    "max_score": 10,
+    "options": [{
+        "score": -5,
+        "choice": "0"
+    }, {
+        "score": 0,
+        "choice": "1"
+    }, {
+        "score": 5,
+        "choice": "2"
+    }, {
+        "score": 8,
+        "choice": "3"
+    }, {
+        "score": 10,
+        "choice": "4+"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 3,
+    "question_type_id": 1,
+    "title": "How many fruit/portions of fruit do you eat per day on average?",
+    "max_score": 6,
+    "options": [{
+        "score": -3,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 4,
+        "choice": "3"
+    }, {
+        "score": 5,
+        "choice": "4"
+    }, {
+        "score": 6,
+        "choice": "5+"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 3,
+    "question_type_id": 1,
+    "title": "Per week, how often do you eat home cooked meals from scratch?",
+    "max_score": 10,
+    "options": [{
+        "score": 10,
+        "choice": "Several times a day"
+    }, {
+        "score": 7,
+        "choice": "Most days"
+    }, {
+        "score": 5,
+        "choice": "3-4 times a week"
+    }, {
+        "score": 2,
+        "choice": "1-3 times a week"
+    }, {
+        "score": -5,
+        "choice": "Rarely, if ever"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 3,
+    "question_type_id": 1,
+    "title": "Per week, how often do choose fast food/ processed food as a main meal?",
+    "max_score": 10,
+    "options": [{
+        "score": -10,
+        "choice": "Several times a day"
+    }, {
+        "score": -5,
+        "choice": "Most days"
+    }, {
+        "score": 0,
+        "choice": "3-4 times a week"
+    }, {
+        "score": 4,
+        "choice": "1-3 times a week"
+    }, {
+        "score": 10,
+        "choice": "Rarely, if ever"
+    }]
+}, {
+    "category_id": 1,
+    "sub_category_id": 3,
+    "question_type_id": 1,
+    "title": "How often do you snack on processed sugary treats (biscuits, chocolate, etc.) or fatty processed snacks (crisps, etc.)?",
+    "max_score": 10,
+    "options": [{
+        "score": -10,
+        "choice": "Several times a day"
+    }, {
+        "score": -5,
+        "choice": "Most days"
+    }, {
+        "score": 2,
+        "choice": "3-4 times a week"
+    }, {
+        "score": 5,
+        "choice": "1-3 times a week"
+    }, {
+        "score": 10,
+        "choice": "Rarely, if ever"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 5,
+    "question_type_id": 2,
+    "title": "In general, how often do you feel joyful?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Never"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Always"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 5,
+    "question_type_id": 2,
+    "title": "In general, how often do you feel positive?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Never"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Always"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 5,
+    "question_type_id": 2,
+    "title": "In general, to what extent do you feel content?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Not at all"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Completely"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 6,
+    "question_type_id": 2,
+    "title": "How often do you become absorbed in what you are doing?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Never"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Always"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 6,
+    "question_type_id": 2,
+    "title": "In general, to what extent do you feel excited and interested in things?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Not at all"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Completely"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 6,
+    "question_type_id": 2,
+    "title": "How often do you lose track of time while doing something you enjoy?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Never"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Always"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 7,
+    "question_type_id": 2,
+    "title": "To what extent do you receive help and support from others when you need it?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Not at all"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Completely"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 7,
+    "question_type_id": 2,
+    "title": "To what extent do you feel loved?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Not at all"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Completely"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 7,
+    "question_type_id": 2,
+    "title": "How satisfied are you with your personal relationships?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Not at all"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Completely"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 8,
+    "question_type_id": 2,
+    "title": "In general, to what extent do you lead a purposeful and meaningful life?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Not at all"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Completely"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 8,
+    "question_type_id": 2,
+    "title": "In general, to what extent do you feel that what you do in your life is valuable and worthwhile?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Not at all"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Completely"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 8,
+    "question_type_id": 2,
+    "title": "To what extent do you generally feel you have a sense of direction in your life?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Not at all"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Completely"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 9,
+    "question_type_id": 2,
+    "title": "How much of the time do you feel you are making progress towards accomplishing your goals?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Never"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Always"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 9,
+    "question_type_id": 2,
+    "title": "How often are you able to handle your responsibilities?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Never"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Always"
+    }]
+}, {
+    "category_id": 2,
+    "sub_category_id": 9,
+    "question_type_id": 2,
+    "title": "How often do you achieve the important goals you have set for yourself?",
+    "max_score": 10,
+    "options": [{
+        "score": 0,
+        "choice": "Never"
+    }, {
+        "score": 1,
+        "choice": "1"
+    }, {
+        "score": 2,
+        "choice": "2"
+    }, {
+        "score": 3,
+        "choice": "3"
+    }, {
+        "score": 4,
+        "choice": "4"
+    }, {
+        "score": 5,
+        "choice": "5"
+    }, {
+        "score": 6,
+        "choice": "6"
+    }, {
+        "score": 7,
+        "choice": "7"
+    }, {
+        "score": 8,
+        "choice": "8"
+    }, {
+        "score": 9,
+        "choice": "9"
+    }, {
+        "score": 10,
+        "choice": "Always"
+    }]
+}]

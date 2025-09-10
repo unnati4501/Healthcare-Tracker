@@ -1,0 +1,69 @@
+<?php
+
+namespace App\Http\Requests\Admin;
+
+use App\Http\Requests\Request;
+use Illuminate\Foundation\Http\FormRequest;
+use Illuminate\Validation\Rule;
+
+class CreateGoalRequest extends FormRequest
+{
+    /**
+     * Determine if the user is authorized to make this request.
+     *
+     * @return bool
+     */
+    public function authorize()
+    {
+        return access()->allow('create-goal-tags');
+    }
+
+    /**
+     * Get the validation rules that apply to the request.
+     *
+     * @return array
+     */
+    public function rules()
+    {
+        $logoMax = config('zevolifesettings.fileSizeValidations.goalTags.logo', 2048);
+        $payload = $this->input();
+        $rules   = array();
+
+        $rules['logo'] = [
+            'required',
+            'image',
+            'mimes:jpg,jpeg,png',
+            "max:{$logoMax}",
+            Rule::dimensions()->minWidth(320)->minHeight(320)->ratio(1 / 1.0),
+        ];
+        $rules['title'] = ['required', 'regex:/(^[A-Za-z ]+$)+/', 'max:15',
+            Rule::unique('goals')
+                ->where(function ($query) use ($payload) {
+                    return $query->where('title', @$payload['title']);
+                })];
+
+        return $rules;
+    }
+
+    public function attributes()
+    {
+        return [
+            'logo'  => 'goal tag logo',
+            'title' => 'goal tag name',
+        ];
+    }
+
+    /**
+     * Custom error messages
+     *
+     * @return array
+     */
+    public function messages(): array
+    {
+        return [
+            'title.unique'    => 'The goal tag name already exists.',
+            'logo.max'        => 'The goal tag logo may not be greater than 2 MB.',
+            'logo.dimensions' => 'The uploaded image does not match the given dimension and ratio.',
+        ];
+    }
+}

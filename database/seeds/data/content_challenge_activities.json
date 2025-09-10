@@ -1,0 +1,99 @@
+[{
+    "category_id": "1",
+    "activity":"Open",
+    "points_per_action":"2",
+    "daily_limit": "5"
+    
+}, {
+    "category_id": "1",
+    "activity":"Like",
+    "points_per_action":"2",
+    "daily_limit": "5"
+    
+}, {
+    "category_id": "1",
+    "activity":"Share",
+    "points_per_action":"3",
+    "daily_limit": "5"
+}, {
+    "category_id": "2",
+    "activity":"Like",
+    "points_per_action":"5",
+    "daily_limit": "2"
+}, {
+    "category_id": "2",
+    "activity":"Share",
+    "points_per_action":"5",
+    "daily_limit": "2"
+}, {
+    "category_id": "2",
+    "activity":"Begin Survey",
+    "points_per_action":"5",
+    "daily_limit": "2"
+}, {
+    "category_id": "2",
+    "activity":"End Survey",
+    "points_per_action":"5",
+    "daily_limit": "2"
+}, {
+    "category_id": "3",
+    "activity":"Like",
+    "points_per_action":"2",
+    "daily_limit": "5"
+}, {
+    "category_id": "3",
+    "activity":"Share",
+    "points_per_action":"3",
+    "daily_limit": "5"
+}, {
+    "category_id": "3",
+    "activity":"Completed",
+    "points_per_action":"5",
+    "daily_limit": "5"
+}, {
+    "category_id": "4",
+    "activity":"Like",
+    "points_per_action":"5",
+    "daily_limit": "5"
+}, {
+    "category_id": "4",
+    "activity":"Share",
+    "points_per_action":"5",
+    "daily_limit": "5"
+}, {
+    "category_id": "4",
+    "activity":"Completed",
+    "points_per_action":"5",
+    "daily_limit": "3"
+}, {
+    "category_id": "5",
+    "activity":"Open",
+    "points_per_action":"2",
+    "daily_limit": "5"
+}, {
+    "category_id": "5",
+    "activity":"Like",
+    "points_per_action":"2",
+    "daily_limit": "5"
+}, {
+    "category_id": "5",
+    "activity":"Share",
+    "points_per_action":"3",
+    "daily_limit": "5"
+}, {
+    "category_id": "6",
+    "activity":"Sending Messages",
+    "points_per_action":"5",
+    "daily_limit": "20"
+}, {
+    "category_id": "7",
+    "activity":"Entering the Mood",
+    "points_per_action":"2",
+    "daily_limit": "1"
+}, {
+    "category_id": "8",
+    "activity":"Completing Wellbeing Survey",
+    "points_per_action":"20",
+    "daily_limit": "1"
+}
+]

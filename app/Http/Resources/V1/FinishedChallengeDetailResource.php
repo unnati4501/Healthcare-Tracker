@@ -1,0 +1,327 @@
+<?php
+
+namespace App\Http\Resources\V1;
+
+use App\Http\Traits\ProvidesAuthGuardTrait;
+use App\Models\Badge;
+use Carbon\Carbon;
+use Illuminate\Http\Resources\Json\JsonResource;
+
+class FinishedChallengeDetailResource extends JsonResource
+{
+    use ProvidesAuthGuardTrait;
+
+    /**
+     * Create a new resource instance.
+     *
+     * @param  mixed  $resource
+     * @return void
+     */
+    public function __construct($resource)
+    {
+        parent::__construct($resource);
+    }
+
+    /**
+     * Transform the resource into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function toArray($request)
+    {
+        /** @var User $user */
+        $user                       = $this->user();
+        $teamData                   = $user->teams()->first()->users()->get();
+        $companyData                = $user->company()->first()->members()->get();
+        $userTimezone               = $user->timezone;
+        $appTimezone                = config('app.timezone');
+        $challenge_rule_description = config('zevolifesettings.challenge_rule_description');
+
+        if ($this->finished ) {
+            $freezedUserTeamId = $this->challengeWiseUserPoints()->where('user_id', $user->id)->first();
+            if (empty($freezedUserTeamId)) {
+                $freezedTeamUserList = $this->challengeWiseUserPoints()->where('team_id', $user->teams()->first()->id)->get()->pluck('user_id')->toArray();
+            } else {
+                $freezedTeamUserList = $this->challengeWiseUserPoints()->where('team_id', $freezedUserTeamId->team_id)->get()->pluck('user_id')->toArray();
+            }
+        }
+
+        $currentDateTime = now($userTimezone);
+        $startDate       = Carbon::parse($this->start_date, $appTimezone)->setTimezone($userTimezone);
+        $endDate         = Carbon::parse($this->end_date, $appTimezone)->setTimezone($userTimezone);
+
+        $daysRange = \createDateRange($startDate, $endDate);
+
+        $badgeData = Badge::select("badges.*")->join('badge_user', 'badge_user.badge_id', '=', 'badges.id')->where("badge_user.user_id", $user->id)->where("badge_user.model_id", $this->id)->where("badge_user.model_name", 'challenge')->get();
+
+        $isStarted   = false;
+        $isCompleted = false;
+
+        $startDate = $startDate->toDateTimeString();
+        $endDate   = $endDate->toDateTimeString();
+
+        if ($currentDateTime->between($startDate, $endDate)) {
+            $isStarted = true;
+        }
+
+        if ($currentDateTime->greaterThan($endDate)) {
+            $isCompleted = true;
+        }
+
+        $timerData = [];
+        $timerData = calculatDayHrMin($currentDateTime->toDateTimeString(), $endDate);
+
+        $challengeRulesData = $this->challengeRules()->join('challenge_targets', 'challenge_targets.id', '=', 'challenge_rules.challenge_target_id')->select('challenge_rules.*', 'challenge_targets.short_name', 'challenge_targets.name')->get();
+
+        $usersExtraPoints = $this->challengeWiseManualPoints()->where('user_id', $user->getKey())->sum('points');
+
+        $i = 0;
+
+        $targetArray = [];
+        foreach ($challengeRulesData as $outer => $rule) {
+            $challengeRulesArray = [];
+            $exercisesName       = "";
+
+            if ($rule->challenge_target_id == 4 && !empty($rule->model_id)) {
+                $exerciseObj = \App\Models\Exercise::where("id", $rule->model_id)->first();
+                if (!empty($exerciseObj)) {
+                    $exercisesName = $exerciseObj->title;
+                }
+            }
+
+            $challengeRulesArray['targetId'] = $rule->challenge_target_id;
+            if (!empty($exerciseObj)) {
+                $challengeRulesArray['name'] = $exercisesName;
+            } else {
+                $challengeRulesArray['name'] = $rule->name;
+            }
+            $challengeRulesArray['targetUOM'] = $rule->uom;
+            $challengeRulesArray['goal']      = $rule->target;
+
+            $challengeRulesArray['data'] = [];
+            $totalCount                  = 0;
+            $currentDayValueForStreak    = 0;
+            foreach ($daysRange as $inner => $day) {
+                if ($day->toDateString() > now($userTimezone)->toDateString()) {
+                    continue;
+                }
+
+                $daysData         = [];
+                $daysData['date'] = $day->toDateString();
+
+                if ($rule->short_name == 'distance') {
+                    if ($this->challenge_type == 'individual') {
+                        $count = $user->getDistanceHistory($this, $daysData['date'], $appTimezone, $userTimezone);
+                    } elseif ($this->challenge_type == 'team') {
+                        $count = 0;
+                        if ($this->finished ) {
+                            if (!empty($freezedTeamUserList)) {
+                                $count = $this->challengeHistorySteps()
+                                    ->where(\DB::raw("DATE(CONVERT_TZ(freezed_challenge_steps.log_date, '{$appTimezone}', '{$userTimezone}'))"), '=', $daysData['date'])
+                                    ->whereIn('user_id', $freezedTeamUserList)
+                                    ->sum('distance');
+                            }
+                        } else {
+                            foreach ($teamData as $key => $value) {
+                                $count += $value->getDistanceHistory($this, $daysData['date'], $appTimezone, $userTimezone);
+                            }
+                        }
+                    } else {
+                        $count = 0;
+                        foreach ($companyData as $key => $value) {
+                            $count += $value->getDistanceHistory($this, $daysData['date'], $appTimezone, $userTimezone);
+                        }
+                    }
+                    //$points = round($count / $this->pointCalcRules['distance'], 1);
+                } elseif ($rule->short_name == 'steps') {
+                    if ($this->challenge_type == 'individual') {
+                        $count = $user->getStepsHistory($this, $daysData['date'], $appTimezone, $userTimezone);
+                    } elseif ($this->challenge_type == 'team') {
+                        $count = 0;
+                        if ($this->finished ) {
+                            if (!empty($freezedTeamUserList)) {
+                                $count = $this->challengeHistorySteps()
+                                    ->where(\DB::raw("DATE(CONVERT_TZ(freezed_challenge_steps.log_date, '{$appTimezone}', '{$userTimezone}'))"), '=', $daysData['date'])
+                                    ->whereIn('user_id', $freezedTeamUserList)
+                                    ->sum('steps');
+                            }
+                        } else {
+                            foreach ($teamData as $key => $value) {
+                                $count += $value->getStepsHistory($this, $daysData['date'], $appTimezone, $userTimezone);
+                            }
+                        }
+                    } else {
+                        $count = 0;
+                        foreach ($companyData as $key => $value) {
+                            $count += $value->getStepsHistory($this, $daysData['date'], $appTimezone, $userTimezone);
+                        }
+                    }
+
+                    //$points = round($count / $this->pointCalcRules['steps'], 1);
+                } elseif ($rule->short_name == 'exercises' && $rule->model_name == 'Exercise') {
+                    if ($this->challenge_type == 'individual') {
+                        $count = $user->getExercisesHistory($this, $daysData['date'], $appTimezone, $userTimezone, $rule->uom, $rule->model_id);
+                    } elseif ($this->challenge_type == 'team') {
+                        $count = 0;
+                        if ($this->finished ) {
+                            if (!empty($freezedTeamUserList)) {
+                                $column = 'duration';
+                                if ($rule->uom == 'meter') {
+                                    $column = 'distance';
+                                }
+                                $date  = $daysData['date'];
+                                $count = $this->challengeHistoryExercises()
+                                    ->where(function ($q) use ($date, $appTimezone, $userTimezone, $freezedTeamUserList) {
+                                        $q->whereDate(\DB::raw("CONVERT_TZ(freezed_challenge_exercise.start_date, '{$appTimezone}', '{$userTimezone}')"), '<=', $date)
+                                            ->whereDate(\DB::raw("CONVERT_TZ(freezed_challenge_exercise.end_date, '{$appTimezone}', '{$userTimezone}')"), '>=', $date);
+                                    })
+                                    ->whereIn('user_id', $freezedTeamUserList)
+                                    ->sum($column);
+
+                                if ($column == 'duration') {
+                                    $count = ($count / 60);
+                                }
+                            }
+                        } else {
+                            foreach ($teamData as $key => $value) {
+                                $count += $value->getExercisesHistory($this, $daysData['date'], $appTimezone, $userTimezone, $rule->uom, $rule->model_id);
+                            }
+                        }
+                    } else {
+                        $count = 0;
+                        foreach ($companyData as $key => $value) {
+                            $count += $value->getExercisesHistory($this, $daysData['date'], $appTimezone, $userTimezone, $rule->uom, $rule->model_id);
+                        }
+                    }
+
+                    /*$point = 'exercises_duration';
+                if ($rule->uom == 'meter') {
+                $point = 'exercises_distance';
+                }
+
+                $points = round($count / $this->pointCalcRules[$point], 1);*/
+                } elseif ($rule->short_name == 'meditations') {
+                    if ($this->challenge_type == 'individual') {
+                        $count = $user->getMeditationHistory($this, $daysData['date'], $appTimezone, $userTimezone, $rule->uom);
+                    } elseif ($this->challenge_type == 'team') {
+                        $count = 0;
+                        if ($this->finished ) {
+                            if (!empty($freezedTeamUserList)) {
+                                $count = $this->challengeHistoryInspires()
+                                    ->where(\DB::raw("DATE(CONVERT_TZ(freezed_challenge_inspire.log_date, '{$appTimezone}', '{$userTimezone}'))"), '=', $daysData['date'])
+                                    ->whereIn('user_id', $freezedTeamUserList)
+                                    ->count();
+                            }
+                        } else {
+                            foreach ($teamData as $key => $value) {
+                                $count += $value->getMeditationHistory($this, $daysData['date'], $appTimezone, $userTimezone, $rule->uom);
+                            }
+                        }
+                    } else {
+                        $count = 0;
+                        foreach ($companyData as $key => $value) {
+                            $count += $value->getMeditationHistory($this, $daysData['date'], $appTimezone, $userTimezone, $rule->uom);
+                        }
+                    }
+                    //$points = round($count / $this->pointCalcRules['meditations'], 1);
+                }
+
+                // if ($this->challenge_type == 'team') {
+                //     $daysData['value'] = $teamCount > 0 ? (int) round(($count / $teamCount)) : 0;
+                // } else {
+                $daysData['value'] = (int) $count;
+                // }
+
+                $totalCount += $daysData['value'];
+
+                $currentDayValueForStreak = $daysData['value'];
+
+                array_push($challengeRulesArray['data'], $daysData);
+            }
+
+            $challengeRulesArray['total'] = (int) $totalCount;
+
+            // $challengeRulesArray['total'] = $teamCount > 0 ? (int) round($totalCount / $teamCount) : 0;
+
+            // if ($this->challenge_type == 'team') {
+            //     if ($this->challengeCatShortName == 'streak') {
+            //         $currentDayValueForStreakCount    = $teamCount > 0 ? ($currentDayValueForStreak / $teamCount) : 0;
+            //         $challengeRulesArray['remaining'] = (int) round($rule->target - $currentDayValueForStreakCount);
+            //     } else if ($this->challengeCatShortName == 'most') {
+            //         $challengeRulesArray['remaining'] = $teamCount > 0 ? (int) round($totalCount / $teamCount) : 0;
+            //     } else {
+            //         $currentDayValueForStreakCount    = $teamCount > 0 ? ($totalCount / $teamCount) : 0;
+            //         $challengeRulesArray['remaining'] = (int) round($rule->target - $currentDayValueForStreakCount);
+            //     }
+            // } else {
+            if ($this->challengeCatShortName == 'streak') {
+                $challengeRulesArray['remaining'] = ($rule->target - $currentDayValueForStreak);
+            } elseif ($this->challengeCatShortName == 'most') {
+                $challengeRulesArray['remaining'] = ($totalCount);
+            } else {
+                $challengeRulesArray['remaining'] = ($rule->target - $totalCount);
+            }
+            // }
+
+            array_push($targetArray, $challengeRulesArray);
+        }
+
+        $description = "";
+
+        $description = (!empty($this->description)) ? $this->description : "";
+
+        if (!empty($this->challenge_category_id) && !empty($challenge_rule_description[$this->challenge_type]) && $challenge_rule_description[$this->challenge_type][$this->challenge_category_id]) {
+            $description .= "\n\nRules : " . $challenge_rule_description[$this->challenge_type][$this->challenge_category_id];
+        }
+
+        if (!empty($this->freezed_data_at) && !$isCompleted) {
+            $description .= "\n\nLast points updated at " . Carbon::parse($this->freezed_data_at, $appTimezone)->setTimezone($userTimezone)->format('d/m/Y h:i A') . "\n\nNext points update will be on " . Carbon::parse($this->freezed_data_at, $appTimezone)->setTimezone($userTimezone)->addHours(4)->format('d/m/Y h:i A');
+        }
+
+        if ($this->challenge_type == 'individual') {
+            $pointsRecord = $this->challengeWiseUserPoints()->where('user_id', $user->id)->first();
+        } else {
+            $freezedTeamData = $this->challengeWiseUserPoints()->where('user_id', $user->id)->first();
+
+            if (empty($freezedTeamData)) {
+                $pointsRecord = $this->challengeWiseTeamPoints()->where('team_id', $user->teams()->first()->id)->first();
+            } else {
+                $pointsRecord = $this->challengeWiseTeamPoints()->where('team_id', $freezedTeamData->team_id)->first();
+            }
+        }
+
+        $point = (!empty($pointsRecord) && !empty($pointsRecord->points)) ? $pointsRecord->points : 0;
+
+        if ($this->finished ) {
+            $members = \DB::table('freezed_challenge_participents')->where('challenge_id', $this->id)->count();
+        } else {
+            if ($this->challenge_type == 'individual') {
+                $members = $this->members()->wherePivot('status', 'Accepted')->count();
+            } else {
+                $members = $this->memberTeams()->count();
+            }
+        }
+
+        return [
+            'id'                => $this->id,
+            'title'             => $this->title,
+            'description'       => $description,
+            'image'             => $this->getMediaData('logo', ['w' => 1280, 'h' => 640]),
+            'startDateTime'     => Carbon::parse($this->start_date, $appTimezone)->setTimezone($userTimezone)->toAtomString(),
+            'endDateTime'       => Carbon::parse($this->end_date, $appTimezone)->setTimezone($userTimezone)->toAtomString(),
+            'members'           => (!empty($members)) ? $members : 0,
+            'isStarted'         => $isStarted,
+            'isCompleted'       => $isCompleted,
+            'creator'           => $this->getCreatorData(),
+            'badges'            => ($badgeData->count() > 0) ? new BadgeListCollection($badgeData) : [],
+            'challengeCategory' => array("id" => $this->challenge_category_id, "name" => $this->challengeCatName),
+            'targets'           => $targetArray,
+            'timerData'         => $timerData,
+            'rank'              => (!empty($pointsRecord->rank)) ? $pointsRecord->rank : 0,
+            'points'            => round($point, 1),
+            'cancelled'         => ($this->cancelled) ,
+            'type'              => $this->challenge_type,
+        ];
+    }
+}

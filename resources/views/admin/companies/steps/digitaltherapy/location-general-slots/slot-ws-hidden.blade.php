@@ -1,0 +1,1 @@
+{{ Form::hidden("selected_ws[$key][$id][]", $value, ['class' => 'selected_ws']) }}

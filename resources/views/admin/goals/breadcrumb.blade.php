@@ -1,0 +1,28 @@
+<!-- Content Header (Page header) -->
+<div class="content-header">
+    <div class="container-fluid">
+        <div class="d-md-flex justify-content-between">
+            <div class="align-self-center">
+                <h1>{{ $appPageTitle }}</h1>
+                @if(!empty($breadcrumb))
+                    {{ Breadcrumbs::render($breadcrumb) }}
+                @endif
+            </div>
+            <div class="align-self-center">
+                @if($create)
+                @if($goalCount < 10)
+                @permission('create-goal-tags')
+                <a class="btn btn-primary" href="{!! route('admin.goals.create') !!}">
+                    <i class="far fa-plus me-3 align-middle"></i>
+                    <span class="align-middle">{{trans('goals.buttons.add_goal')}}</span>
+                </a>
+                @endauth
+                @endif
+                @endif
+                @if($back)
+                <a href="{!! route('admin.goals.index') !!}" class="btn btn-outline-primary"><i class="far fa-arrow-left me-3 align-middle"></i>  <span class="align-middle">{{trans('buttons.general.back')}}</span></a>
+                @endif
+            </div>
+        </div>
+    </div>
+</div>

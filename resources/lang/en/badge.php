@@ -1,0 +1,75 @@
+<?php
+return [
+    // Labels for Badge module
+    'title'      => [
+        'index_title'       => 'Badges',
+        'masterclass_badge' => 'Masterclass Badges',
+        'add_form_title'    => 'Add Badge',
+        'edit_form_title'   => 'Edit Badge',
+        'filter'            => 'Filter',
+    ],
+    'filter'     => [
+        'search_by_name'    => 'Search By Name',
+        'select_badge_type' => 'Select Badge Type',
+    ],
+    'table'      => [
+        'updated_at' => 'Updated At',
+    ],
+    'buttons'    => [
+        'add_badge' => 'Add Badge',
+    ],
+    'form'       => [
+        'labels'      => [
+            'logo'               => 'Logo',
+            'info'               => 'Info',
+            'title'              => 'Badge Name',
+            'badge_type'         => 'Badge Type',
+            'challenge_activity' => 'Challenge/Activity',
+            'challenge'          => 'Challenge',
+            'badge_target'       => 'Target Type',
+            'awarded_badge'      => 'Awarded Badge',
+            'action'             => 'Actions',
+            'updated_at'         => 'Updated At',
+            'excercise_type'     => 'Excercise Type',
+            'uom'                => 'Unit of Measurement',
+            'target_values'      => 'Target Value',
+            'expire_days'        => 'Expire Days',
+            'can_expire'         => 'Will Expire?',
+            'challenge_type'     => 'Challenge Type',
+        ],
+        'placeholder' => [
+            'choose_file'                => 'Choose File',
+            'enter_badge_name'           => 'Enter Badge Name',
+            'select_badge_type'          => 'Select Target Value',
+            'select_challenge_type'      => 'Select Challenge Type',
+            'select_badge_category'      => 'Select Target Type',
+            'enter_target_value'         => 'Enter Target Value',
+            'enter_number_of_days'       => 'Enter Number of Days',
+            'enter_details'              => 'Enter Details',
+            'select_unit_of_measurement' => 'Select Unit of Measurement',
+            'select_exercise_type'       => 'Select Excercise Type',
+        ],
+    ],
+    'modal'      => [
+        'delete'          => 'Delete Badge?',
+        'delete_message'  => 'Are you sure you want to delete this Badge?',
+        'badge_deleted'   => 'Badge has been deleted successfully.',
+        'badge_in_use'    => 'Badge is in use!',
+        'unable_to_badge' => 'Failed to delete badge, please try again.',
+    ],
+    'message'    => [
+        'something_wrong'           => 'Something went wrong please try again.',
+        'unauthorized_access'       => 'You are not authorized.',
+        'something_wrong_try_again' => 'Something went wrong please try again.',
+        'data_store_success'        => 'Badge has been added successfully!',
+        'data_update_success'       => 'Badge has been updated successfully!',
+        'upload_image_dimension'    => 'The uploaded image does not match the given dimension and ratio.',
+    ],
+    'validation' => [
+        'badge_type_required'  => 'The badge type field is required.',
+        'unit_of_measurement'  => 'The Unit of Measurement field is required when Badge Target is Exercises.',
+        'image_valid_error'    => 'Please try again with uploading valid image.',
+        'image_size_2M_error'  => 'Maximum allowed size for uploading image or gif is 2 mb. Please try again.',
+        'badge_already_exists' => 'this badge already exists.',
+    ],
+];

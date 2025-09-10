@@ -1,0 +1,1 @@
+{{ Form::hidden("specific_slots[$key][$date_input][time][$id]", $start_time . '-' . $end_time, ['class' => 'start-time-data general-slots slots_'.$key.'_'.$datestamp.'', 'wsid' => $key, 'datestamp' => $datestamp, 'id' => $id, 'data-date' => $date_input]) }}

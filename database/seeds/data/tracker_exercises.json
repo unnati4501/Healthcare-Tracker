@@ -1,0 +1,1733 @@
+[{
+    "tracker_name": "googlefit",
+    "exercise_name": "Aerobics",
+    "exercise_code": "aerobics"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Archery",
+    "exercise_code": "archery"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Badminton",
+    "exercise_code": "badminton"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Baseball",
+    "exercise_code": "baseball"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Basketball",
+    "exercise_code": "basketball"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Biathlon",
+    "exercise_code": "biathlon"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Biking",
+    "exercise_code": "biking"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Handbiking",
+    "exercise_code": "biking.hand"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Mountain biking",
+    "exercise_code": "biking.mountain"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Road biking",
+    "exercise_code": "biking.road"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Spinning",
+    "exercise_code": "biking.spinning"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Stationary biking",
+    "exercise_code": "biking.stationary"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Utility biking",
+    "exercise_code": "biking.utility"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Boxing",
+    "exercise_code": "boxing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Calisthenics",
+    "exercise_code": "calisthenics"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Circuit training",
+    "exercise_code": "circuit_training"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Cricket",
+    "exercise_code": "cricket"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Crossfit",
+    "exercise_code": "crossfit"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Curling",
+    "exercise_code": "curling"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Dancing",
+    "exercise_code": "dancing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Diving",
+    "exercise_code": "diving"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Elevator",
+    "exercise_code": "elevator"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Elliptical",
+    "exercise_code": "elliptical"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Ergometer",
+    "exercise_code": "ergometer"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Escalator",
+    "exercise_code": "escalator"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Fencing",
+    "exercise_code": "fencing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "American Football",
+    "exercise_code": "football.american"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Australian Football",
+    "exercise_code": "football.australian"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Football",
+    "exercise_code": "football.soccer"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Frisbee",
+    "exercise_code": "frisbee_disc"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Gardening",
+    "exercise_code": "gardening"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Golf",
+    "exercise_code": "golf"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Guided Breathing",
+    "exercise_code": "122"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Gymnastics",
+    "exercise_code": "gymnastics"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Handball",
+    "exercise_code": "handball"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "HIIT",
+    "exercise_code": "interval_training"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Hiking",
+    "exercise_code": "hiking"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Hockey",
+    "exercise_code": "hockey"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Horseback riding",
+    "exercise_code": "horseback_riding"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Housework",
+    "exercise_code": "housework"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Ice skating",
+    "exercise_code": "ice_skating"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "In vehicle",
+    "exercise_code": "in_vehicle"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Interval Training",
+    "exercise_code": "interval_training"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Jumping rope",
+    "exercise_code": "jump_rope"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Kayaking",
+    "exercise_code": "kayaking"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Kettlebell training",
+    "exercise_code": "kettlebell_training"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Kickboxing",
+    "exercise_code": "kickboxing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Kitesurfing",
+    "exercise_code": "kitesurfing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Martial arts",
+    "exercise_code": "martial_arts"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Meditation",
+    "exercise_code": "meditation"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Mixed martial arts",
+    "exercise_code": "martial_arts.mixed"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "On foot",
+    "exercise_code": "on_foot"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Other",
+    "exercise_code": "other"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "P90X exercises",
+    "exercise_code": "p90x"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Paragliding",
+    "exercise_code": "paragliding"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Pilates",
+    "exercise_code": "pilates"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Polo",
+    "exercise_code": "polo"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Racquetball",
+    "exercise_code": "racquetball"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Rock climbing",
+    "exercise_code": "rock_climbing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Rowing",
+    "exercise_code": "rowing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Rowing machine",
+    "exercise_code": "rowing.machine"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Rugby",
+    "exercise_code": "rugby"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Running",
+    "exercise_code": "running"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Jogging",
+    "exercise_code": "running.jogging"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Running on sand",
+    "exercise_code": "running.sand"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Treadmill Running",
+    "exercise_code": "running.treadmill"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Sailing",
+    "exercise_code": "sailing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Scuba diving",
+    "exercise_code": "scuba_diving"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Skateboarding",
+    "exercise_code": "skateboarding"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Skating",
+    "exercise_code": "skating"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Cross skating",
+    "exercise_code": "skating.cross"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Indoor skating",
+    "exercise_code": "skating.indoor"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Inline skating (rollerblading)",
+    "exercise_code": "skating.inline"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Skiing",
+    "exercise_code": "skiing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Back-country skiing",
+    "exercise_code": "skiing.back_country"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Cross-country skiing",
+    "exercise_code": "skiing.cross_country"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Downhill skiing",
+    "exercise_code": "skiing.downhill"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Kite skiing",
+    "exercise_code": "skiing.kite"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Roller skiing",
+    "exercise_code": "skiing.roller"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Sledding",
+    "exercise_code": "sledding"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Sleeping",
+    "exercise_code": "sleep"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Light sleep",
+    "exercise_code": "sleep.light"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Deep sleep",
+    "exercise_code": "sleep.deep"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "REM sleep",
+    "exercise_code": "sleep.rem"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Awake (during sleep cycle)",
+    "exercise_code": "sleep.awake"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Snowboarding",
+    "exercise_code": "snowboarding"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Snowmobile",
+    "exercise_code": "snowmobile"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Snowshoeing",
+    "exercise_code": "snowshoeing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Softball",
+    "exercise_code": "softball"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Squash",
+    "exercise_code": "squash"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Stair climbing",
+    "exercise_code": "stair_climbing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Stair-climbing machine",
+    "exercise_code": "stair_climbing.machine"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Stand-up paddleboarding",
+    "exercise_code": "standup_paddleboarding"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Still (not moving)*",
+    "exercise_code": "still"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Strength training",
+    "exercise_code": "strength_training"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Surfing",
+    "exercise_code": "surfing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Swimming",
+    "exercise_code": "swimming"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Open Water Swimming",
+    "exercise_code": "swimming.open_water"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Pool Swimming",
+    "exercise_code": "swimming.pool"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Table tennis (ping pong)",
+    "exercise_code": "table_tennis"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Team sports",
+    "exercise_code": "team_sports"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Tennis",
+    "exercise_code": "tennis"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Tilting",
+    "exercise_code": "tilting"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Treadmill",
+    "exercise_code": "treadmill"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Unknown",
+    "exercise_code": "unknown"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Volleyball",
+    "exercise_code": "volleyball"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Beach volleyball",
+    "exercise_code": "volleyball.beach"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Indoor Volleyball",
+    "exercise_code": "volleyball.indoor"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Wakeboarding",
+    "exercise_code": "wakeboarding"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Walking",
+    "exercise_code": "walking"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Fitness walking",
+    "exercise_code": "walking.fitness"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Nordic walking",
+    "exercise_code": "walking.nordic"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Treadmill walking",
+    "exercise_code": "walking.treadmill"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "stroller walking",
+    "exercise_code": "walking.stroller"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Waterpolo",
+    "exercise_code": "water_polo"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Weightlifting",
+    "exercise_code": "weightlifting"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Wheelchair",
+    "exercise_code": "wheelchair"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Windsurfing",
+    "exercise_code": "windsurfing"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Yoga",
+    "exercise_code": "yoga"
+}, {
+    "tracker_name": "googlefit",
+    "exercise_name": "Zumba",
+    "exercise_code": "zumba"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "run",
+    "exercise_code": "90009"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "bike",
+    "exercise_code": "90001"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "swim",
+    "exercise_code": "90024"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "walk",
+    "exercise_code": "90013"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "yoga",
+    "exercise_code": "33509423"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "sport",
+    "exercise_code": "34053055"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "cardio",
+    "exercise_code": "33824746"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "running",
+    "exercise_code": "33178752"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "walking",
+    "exercise_code": "33510019"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "weights",
+    "exercise_code": "33580440"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "crossfit",
+    "exercise_code": "33510146"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "treadmill",
+    "exercise_code": "90019"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "elliptical",
+    "exercise_code": "90017"
+}, {
+    "tracker_name": "fitbit",
+    "exercise_name": "cardio sculpt",
+    "exercise_code": "33510187"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Sleep",
+    "exercise_code": "SLEEP"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Running",
+    "exercise_code": "RUNNING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Street Running",
+    "exercise_code": "STREET_RUNNING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Track Running",
+    "exercise_code": "TRACK_RUNNING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Trail Running",
+    "exercise_code": "TRAIL_RUNNING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Treadmill Running",
+    "exercise_code": "TREADMILL_RUNNING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Cycling",
+    "exercise_code": "CYCLING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Cyclocross",
+    "exercise_code": "CYCLOCROSS"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Downhill Biking",
+    "exercise_code": "DOWNHILL_BIKING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Indoor Cycling",
+    "exercise_code": "INDOOR_CYCLING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Mountain Biking",
+    "exercise_code": "MOUNTAIN_BIKING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Recumbent Cycling",
+    "exercise_code": "RECUMBENT_CYCLING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Road Biking",
+    "exercise_code": "ROAD_BIKING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Track Cycling",
+    "exercise_code": "TRACK_CYCLING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Gym & Fitness Equipments",
+    "exercise_code": "FITNESS_EQUIPMENT"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Elliptical",
+    "exercise_code": "ELLIPTICAL"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Indoor Cardio",
+    "exercise_code": "INDOOR_CARDIO"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Indoor Rowing",
+    "exercise_code": "INDOOR_ROWING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Stair Climbing",
+    "exercise_code": "STAIR_CLIMBING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Stregth Training",
+    "exercise_code": "STRENGTH_TRAINING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Hiking",
+    "exercise_code": "HIKING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Swimming",
+    "exercise_code": "SWIMMING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Lap Swimming",
+    "exercise_code": "LAP_SWIMMING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Open Water Swimming",
+    "exercise_code": "OPEN_WATER_SWIMMING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Walking",
+    "exercise_code": "WALKING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Casual Walking",
+    "exercise_code": "CASUAL_WALKING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Speed Walking",
+    "exercise_code": "SPEED_WALKING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Transition",
+    "exercise_code": "TRANSITION"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Swim to bike transition",
+    "exercise_code": "SWIMTOBIKETRANSITION"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Bike to run transition",
+    "exercise_code": "BIKETORUNTRANSITION"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Run to bik transition",
+    "exercise_code": "RUNTOBIKETRANSITION"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Motorcycling",
+    "exercise_code": "MOTORCYCLING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Other",
+    "exercise_code": "OTHER"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Backcountry Skiing/Snowboarding",
+    "exercise_code": "BACKCOUNTRY_SKIING_SNOWBOARDING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Boating",
+    "exercise_code": "BOATING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Cross Country Skiing",
+    "exercise_code": "CROSS_COUNTRY_SKIING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Driving",
+    "exercise_code": "DRIVING_GENERAL"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Flying disc",
+    "exercise_code": "FLYING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Golf",
+    "exercise_code": "GOLF"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Horse Riding",
+    "exercise_code": "HORSEBACK_RIDING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Inline Skating",
+    "exercise_code": "INLINE_SKATING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Mountaineering",
+    "exercise_code": "MOUNTAINEERING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Paddling",
+    "exercise_code": "PADDLING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Resort Skiing/Snowboarding",
+    "exercise_code": "RESORT_SKIING_SNOWBOARDING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Rowning",
+    "exercise_code": "ROWING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Sailing",
+    "exercise_code": "SAILING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Skate Skiing",
+    "exercise_code": "SKATE_SKIING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Skating",
+    "exercise_code": "SKATING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Snowmobile",
+    "exercise_code": "SNOWMOBILING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Snow Shoe",
+    "exercise_code": "SNOW_SHOE"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Stand Up Paddleboarding",
+    "exercise_code": "STAND_UP_PADDLEBOARDING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "White Water Rafting/Kayaking",
+    "exercise_code": "WHITEWATER_RAFTING_KAYAKING"
+}, {
+    "tracker_name": "garmin",
+    "exercise_name": "Wind or Kite Surfing",
+    "exercise_code": "WIND_KITE_SURFING"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "archery",
+    "exercise_code": "2"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "bowling",
+    "exercise_code": "7"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "fencing",
+    "exercise_code": "18"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "gymnastics",
+    "exercise_code": "22"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "trackAndField",
+    "exercise_code": "49"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "americanFootball",
+    "exercise_code": "1"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "australianFootball",
+    "exercise_code": "3"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "baseball",
+    "exercise_code": "5"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "basketball",
+    "exercise_code": "6"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "cricket",
+    "exercise_code": "10"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "discSports",
+    "exercise_code": "75"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "handball",
+    "exercise_code": "23"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "hockey",
+    "exercise_code": "25"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "lacrosse",
+    "exercise_code": "27"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "rugby",
+    "exercise_code": "36"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "soccer",
+    "exercise_code": "41"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "softball",
+    "exercise_code": "42"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "volleyball",
+    "exercise_code": "51"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "preparationAndRecovery",
+    "exercise_code": "33"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "flexibility",
+    "exercise_code": "62"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "walking",
+    "exercise_code": "52"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "running",
+    "exercise_code": "37"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "wheelchairWalkPace",
+    "exercise_code": "70"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "wheelchairRunPace",
+    "exercise_code": "71"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "cycling",
+    "exercise_code": "13"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "handCycling",
+    "exercise_code": "74"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "coreTraining",
+    "exercise_code": "59"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "elliptical",
+    "exercise_code": "16"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "functionalStrengthTraining",
+    "exercise_code": "20"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "traditionalStrengthTraining",
+    "exercise_code": "50"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "crossTraining",
+    "exercise_code": "11"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "mixedCardio",
+    "exercise_code": "73"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "highIntensityIntervalTraining",
+    "exercise_code": "63"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "jumpRope",
+    "exercise_code": "64"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "stairClimbing",
+    "exercise_code": "44"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "stairs",
+    "exercise_code": "68"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "stepTraining",
+    "exercise_code": "69"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "fitnessGaming",
+    "exercise_code": "76"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "barre",
+    "exercise_code": "58"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "dance",
+    "exercise_code": "14"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "yoga",
+    "exercise_code": "57"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "mindAndBody",
+    "exercise_code": "29"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "pilates",
+    "exercise_code": "66"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "badminton",
+    "exercise_code": "4"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "racquetball",
+    "exercise_code": "34"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "squash",
+    "exercise_code": "43"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "tableTennis",
+    "exercise_code": "47"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "tennis",
+    "exercise_code": "48"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "climbing",
+    "exercise_code": "9"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "equestrianSports",
+    "exercise_code": "17"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "fishing",
+    "exercise_code": "19"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "golf",
+    "exercise_code": "21"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "hiking",
+    "exercise_code": "24"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "hunting",
+    "exercise_code": "26"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "play",
+    "exercise_code": "32"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "crossCountrySkiing",
+    "exercise_code": "60"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "curling",
+    "exercise_code": "12"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "downhillSkiing",
+    "exercise_code": "61"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "snowSports",
+    "exercise_code": "40"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "snowboarding",
+    "exercise_code": "67"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "skatingSports",
+    "exercise_code": "39"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "paddleSports",
+    "exercise_code": "31"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "rowing",
+    "exercise_code": "35"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "sailing",
+    "exercise_code": "38"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "surfingSports",
+    "exercise_code": "45"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "swimming",
+    "exercise_code": "46"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "waterFitness",
+    "exercise_code": "53"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "waterPolo",
+    "exercise_code": "54"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "waterSports",
+    "exercise_code": "55"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "boxing",
+    "exercise_code": "8"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "kickboxing",
+    "exercise_code": "65"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "martialArts",
+    "exercise_code": "28"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "taiChi",
+    "exercise_code": "72"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "wrestling",
+    "exercise_code": "56"
+}, {
+    "tracker_name": "healthkit",
+    "exercise_name": "other",
+    "exercise_code": "3000"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Alpine Ski",
+    "exercise_code": "alpineski"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "BackCountry Ski",
+    "exercise_code": "backcountryski"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Canoeing",
+    "exercise_code": "canoeing"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Crossfit",
+    "exercise_code": "crossfit"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Ebike Ride",
+    "exercise_code": "ebikeride"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Elliptical",
+    "exercise_code": "elliptical"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Golf",
+    "exercise_code": "golf"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Hand Cycle",
+    "exercise_code": "handcycle"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Hike",
+    "exercise_code": "hike"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Ice Skate",
+    "exercise_code": "iceskate"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Inline Skate",
+    "exercise_code": "inlineskate"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Kayaking",
+    "exercise_code": "kayaking"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Kitesurf",
+    "exercise_code": "kitesurf"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Nordic Ski",
+    "exercise_code": "nordicski"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Ride",
+    "exercise_code": "ride"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Rockclimbing",
+    "exercise_code": "rockclimbing"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Roller Ski",
+    "exercise_code": "rollerski"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Rowing",
+    "exercise_code": "rowing"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Run",
+    "exercise_code": "run"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Sail",
+    "exercise_code": "sail"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Skateboard",
+    "exercise_code": "skateboard"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Snowboard",
+    "exercise_code": "snowboard"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Snowshoe",
+    "exercise_code": "snowshoe"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Soccer",
+    "exercise_code": "soccer"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Stair Stepper",
+    "exercise_code": "stairstepper"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Standup Paddling",
+    "exercise_code": "standuppaddling"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Surfing",
+    "exercise_code": "surfing"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Swim",
+    "exercise_code": "swim"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Velomobile",
+    "exercise_code": "velomobile"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Virtual Ride",
+    "exercise_code": "virtualride"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Virtual Run",
+    "exercise_code": "virtualrun"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Walk",
+    "exercise_code": "walk"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Weight Training",
+    "exercise_code": "weighttraining"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Wheelchair",
+    "exercise_code": "wheelchair"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Windsurf",
+    "exercise_code": "windsurf"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Workout",
+    "exercise_code": "workout"
+}, {
+    "tracker_name": "strava",
+    "exercise_name": "Yoga",
+    "exercise_code": "yoga"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Aerobics",
+    "exercise_code": "AEROBICS"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Football",
+    "exercise_code": "AMERICAN_FOOTBALL"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Aqua fitness",
+    "exercise_code": "AQUATICS"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Backcountry skiing",
+    "exercise_code": "BACKCOUNTRY_SKIING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Badminton",
+    "exercise_code": "BADMINTON"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Ballet",
+    "exercise_code": "BALLET_DANCING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Ballroom",
+    "exercise_code": "BALLROOM_DANCING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Baseball",
+    "exercise_code": "BASEBALL"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Basketball",
+    "exercise_code": "BASKETBALL"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Beach volley",
+    "exercise_code": "BEACH_VOLLEYBALL"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Biathlon",
+    "exercise_code": "BIATHLON"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Body&Mind",
+    "exercise_code": "BODY_AND_MIND"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Bootcamp",
+    "exercise_code": "BOOTCAMP"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Boxing",
+    "exercise_code": "BOXING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Circuit training",
+    "exercise_code": "CIRCUIT_TRAINING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Core",
+    "exercise_code": "CORE"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Cricket",
+    "exercise_code": "CRICKET"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Cross-trainer",
+    "exercise_code": "CROSS_TRAINER"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Skiing",
+    "exercise_code": "CROSS"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Cycling",
+    "exercise_code": "CYCLING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Dancing",
+    "exercise_code": "DANCING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Downhill skiing",
+    "exercise_code": "DOWNHILL_SKIING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Duathlon",
+    "exercise_code": "DUATHLON"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Cycling",
+    "exercise_code": "DUATHLON_CYCLING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Running",
+    "exercise_code": "DUATHLON_RUNNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Field hockey",
+    "exercise_code": "FIELD_HOCKEY"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Finnish baseball",
+    "exercise_code": "FINNISH_BASEBALL"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Fitness dancing",
+    "exercise_code": "FITNESS_DANCING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Fitness martial arts",
+    "exercise_code": "FITNESS_MARTIAL_ARTS"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Step workout",
+    "exercise_code": "FITNESS_STEP"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Floorball",
+    "exercise_code": "FLOORBALL"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Multisport",
+    "exercise_code": "FREE_MULTISPORT"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Disc golf",
+    "exercise_code": "FRISBEEGOLF"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Functional training",
+    "exercise_code": "FUNCTIONAL_TRAINING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Futsal",
+    "exercise_code": "FUTSAL"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Golf",
+    "exercise_code": "GOLF"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Group exercise",
+    "exercise_code": "GROUP_EXERCISE"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Gymnastics",
+    "exercise_code": "GYMNASTICK"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Handball",
+    "exercise_code": "HANDBALL"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "High-intensity interval training",
+    "exercise_code": "HIIT"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Hiking",
+    "exercise_code": "HIKING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Ice hockey",
+    "exercise_code": "ICE_HOCKEY"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Ice skating",
+    "exercise_code": "ICE_SKATING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Indoor cycling",
+    "exercise_code": "INDOOR_CYCLING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Indoor rowing",
+    "exercise_code": "INDOOR_ROWING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Inline skating",
+    "exercise_code": "INLINE_SKATING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Jazz",
+    "exercise_code": "JAZZ_DANCING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Jogging",
+    "exercise_code": "JOGGING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Judo",
+    "exercise_code": "JUDO_MARTIAL_ARTS"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Kickboxing",
+    "exercise_code": "KICKBOXING_MARTIAL_ARTS"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Latin",
+    "exercise_code": "LATIN_DANCING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS BARRE",
+    "exercise_code": "LES_MILLS_BARRE"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS BODYATTACK",
+    "exercise_code": "LES_MILLS_BODYATTACK"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS BODYBALANCE",
+    "exercise_code": "LES_MILLS_BODYBALANCE"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS BODYCOMBAT",
+    "exercise_code": "LES_MILLS_BODYCOMBAT"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS BODYJAM",
+    "exercise_code": "LES_MILLS_BODYJAM"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS BODYPUMP",
+    "exercise_code": "LES_MILLS_BODYPUMP"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS BODYSTEP",
+    "exercise_code": "LES_MILLS_BODYSTEP"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS CXWORX",
+    "exercise_code": "LES_MILLS_CXWORKS"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS GRIT Athletic",
+    "exercise_code": "LES_MILLS_GRIT_ATHLETIC"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS GRIT Cardio",
+    "exercise_code": "LES_MILLS_GRIT_CARDIO"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS GRIT Strength",
+    "exercise_code": "LES_MILLS_GRIT_STRENGTH"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS RPM",
+    "exercise_code": "LES_MILLS_RPM"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS SH'BAM",
+    "exercise_code": "LES_MILLS_SHBAM"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS SPRINT",
+    "exercise_code": "LES_MILLS_SPRINT"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS TONE",
+    "exercise_code": "LES_MILLS_TONE"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "LES MILLS TRIP",
+    "exercise_code": "LES_MILLS_TRIP"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Mobility (dynamic)",
+    "exercise_code": "MOBILITY_DYNAMIC"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Mobility (static)",
+    "exercise_code": "MOBILITY_STATIC"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Modern",
+    "exercise_code": "MODERN_DANCING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Mountain biking",
+    "exercise_code": "MOUNTAIN_BIKING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Nordic walking",
+    "exercise_code": "NORDIC_WALKING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Off-road duathlon",
+    "exercise_code": "OFFROADDUATHLON"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Mountain biking",
+    "exercise_code": "OFFROADDUATHLON_CYCLING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Trail running",
+    "exercise_code": "OFFROADDUATHLON_RUNNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Off-road triathlon",
+    "exercise_code": "OFFROADTRIATHLON"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Mountain biking",
+    "exercise_code": "OFFROADTRIATHLON_CYCLING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Trail running",
+    "exercise_code": "OFFROADTRIATHLON_RUNNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Open water swimming",
+    "exercise_code": "OFFROADTRIATHLON_SWIMMING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Open water swimming",
+    "exercise_code": "OPEN_WATER_SWIMMING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Orienteering",
+    "exercise_code": "ORIENTEERING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Mountain bike orienteering",
+    "exercise_code": "ORIENTEERING_MTB"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Ski orienteering",
+    "exercise_code": "ORIENTEERING_SKI"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Other indoor",
+    "exercise_code": "OTHER_INDOOR"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Other outdoor",
+    "exercise_code": "OTHER_OUTDOOR"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Wheelchair racing",
+    "exercise_code": "PARASPORTS_WHEELCHAIR"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Pilates",
+    "exercise_code": "PILATES"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Pool swimming",
+    "exercise_code": "POOL_SWIMMING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Riding",
+    "exercise_code": "RIDING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Road cycling",
+    "exercise_code": "ROAD_BIKING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Road running",
+    "exercise_code": "ROAD_RUNNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Roller skating",
+    "exercise_code": "ROLLER_BLADING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Classic roller skiing",
+    "exercise_code": "ROLLER_SKIING_CLASSIC"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Freestyle roller skiing",
+    "exercise_code": "ROLLER_SKIING_FREESTYLE"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Rowing",
+    "exercise_code": "ROWING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Rugby",
+    "exercise_code": "RUGBY"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Running",
+    "exercise_code": "RUNNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Show",
+    "exercise_code": "SHOW_DANCING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Skating",
+    "exercise_code": "SKATING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Snowboarding",
+    "exercise_code": "SNOWBOARDING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Snowshoe trekking",
+    "exercise_code": "SNOWSHOE_TREKKING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Soccer",
+    "exercise_code": "SOCCER"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Spinning",
+    "exercise_code": "SPINNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Squash",
+    "exercise_code": "SQUASH"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Street",
+    "exercise_code": "STREET_DANCING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Strength training",
+    "exercise_code": "STRENGTH_TRAINING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Stretching",
+    "exercise_code": "STRETCHING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Swimming",
+    "exercise_code": "SWIMMING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Table tennis",
+    "exercise_code": "TABLE_TENNIS"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Telemark skiing",
+    "exercise_code": "TELEMARK_SKIING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Tennis",
+    "exercise_code": "TENNIS"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Track&field running",
+    "exercise_code": "TRACK_AND_FIELD_RUNNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Trail running",
+    "exercise_code": "TRAIL_RUNNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Treadmill running",
+    "exercise_code": "TREADMILL_RUNNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Triathlon",
+    "exercise_code": "TRIATHLON"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Cycling",
+    "exercise_code": "TRIATHLON_CYCLING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Running",
+    "exercise_code": "TRIATHLON_RUNNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Open water swimming",
+    "exercise_code": "TRIATHLON_SWIMMING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Trotting",
+    "exercise_code": "TROTTING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Ultra running",
+    "exercise_code": "ULTRARUNNING_RUNNING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Climbing (indoor)",
+    "exercise_code": "VERTICALSPORTS_WALLCLIMBING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Volleyball",
+    "exercise_code": "VOLLEYBALL"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Walking",
+    "exercise_code": "WALKING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Canoeing",
+    "exercise_code": "WATERSPORTS_CANOEING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Kayaking",
+    "exercise_code": "WATERSPORTS_KAYAKING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Kitesurfing",
+    "exercise_code": "WATERSPORTS_KITESURFING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Sailing",
+    "exercise_code": "WATERSPORTS_SAILING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Surfing",
+    "exercise_code": "WATERSPORTS_SURFING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Wakeboarding",
+    "exercise_code": "WATERSPORTS_WAKEBOARDING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Water skiing",
+    "exercise_code": "WATERSPORTS_WATERSKI"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Windsurfing",
+    "exercise_code": "WATERSPORTS_WINDSURFING"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Classic XC skiing",
+    "exercise_code": "XC_SKIING_CLASSIC"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Freestyle XC skiing",
+    "exercise_code": "XC_SKIING_FREESTYLE"
+}, {
+    "tracker_name": "polar",
+    "exercise_name": "Yoga",
+    "exercise_code": "YOGA"
+}]

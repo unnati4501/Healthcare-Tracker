@@ -1,0 +1,376 @@
+@extends('layouts.app')
+
+@section('after-styles')
+<link href="{{ asset('assets/plugins/OwlCarousel2/owl.carousel.min.css?var='.rand()) }}" rel="stylesheet"/>
+<link href="{{ asset('assets/plugins/OwlCarousel2/owl.theme.default.min.css?var='.rand()) }}" rel="stylesheet"/>
+<link href="{{ asset('assets/plugins/datepicker/datepicker3.css?var='.rand()) }}" rel="stylesheet"/>
+<link href="{{ asset('assets/plugins/jonthornton-timepicker/jquery.timepicker.min.css?var='.rand()) }}" rel="stylesheet"/>
+<style type="text/css">
+    .presenter-avatar { height: 50px; width: 50px !important; display: inline-block !important; border-radius: 50%; margin-right: 20px; }
+</style>
+@endsection
+
+@section('content-header')
+<!-- Content Header (Page header) -->
+@include('admin.marketplace.breadcrumb', [
+    'mainTitle' => trans('marketplace.book_event.title.index'),
+    'breadcrumb' => Breadcrumbs::render('marketplace.book_event.index'),
+    'backToBookingTab' => true,
+])
+<!-- /.content-header -->
+@endsection
+
+@section('content')
+<section class="content">
+    <div class="container-fluid">
+        <div class="card form-card">
+            {{ Form::open(['route' => ['admin.marketplace.confirm-event-booking', $event->id], 'class' => 'form-horizontal book_event_from_submit', 'method' => 'PATCH', 'role' => 'form', 'id' => 'bookEvent']) }}
+            <div class="card-body">
+                <div class="card-inner">
+                    <div class="row">
+                        <div class="col-xxl-4 col-lg-3 mb-4">
+                            <img src="{{ $event->logo }}"/>
+                        </div>
+                        <div class="col-xxl-8 col-lg-9">
+                            <div class="row">
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        {{ Form::label(null, trans('marketplace.book_event.form.labels.event_name')) }}
+                                        {{ Form::text(null, $event->name, ['disabled' => true, 'class' => 'form-control']) }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        {{ Form::label(null, trans('marketplace.book_event.form.labels.duration')) }}
+                                        {{ Form::text(null, convertToHoursMins(timeToDecimal($event->duration), false, '%s %s'), ['disabled' => true, 'class' => 'form-control', 'data-duration']) }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        {{ Form::label(null, trans('marketplace.book_event.form.labels.location')) }}
+                                        {{ Form::text(null, $locationTypes[$event->location_type], ['disabled' => true, 'class' => 'form-control']) }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6" data-capacity="{{ $event->capacity }}" data-capacity-block="" data-totalusers="0">
+                                    <div class="form-group">
+                                        @if(!empty($event->capacity))
+                                            {{ Form::label(null, trans('marketplace.book_event.form.labels.capacity')) }}
+                                            {{ Form::text(null, $event->capacity, ['disabled' => true, 'class' => 'form-control']) }}
+                                        @endif
+                                    </div>
+                                </div>
+                                @if(strtolower($locationTypes[$event->location_type]) == strtolower('Online'))
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        {{ Form::label('companyType', trans('marketplace.book_event.form.labels.company_type')) }}
+                                        {{ Form::select('company_type', config('zevolifesettings.company-type'), null, ['class' => 'form-control select2', 'id' => 'location', 'data-allow-clear' => 'false'] ) }}
+                                    </div>
+                                </div>
+                                <div class="col-lg-6">
+                                    <div class="form-group">
+                                        {{ Form::label(null, trans('marketplace.book_event.form.labels.video_link')) }}
+                                        <span class="font-16 qus-sign-tooltip" data-placement="top" data-toggle="help-tooltip" title="{{ config('zevolifesettings.video_link_message.message') }}">
+                                            <i aria-hidden="true" class="far fa-info-circle text-primary">
+                                            </i>
+                                        </span>
+                                        {{ Form::text('video_link', null, ['class' => 'form-control','placeholder' => config('zevolifesettings.video_link_message.placeholder') ]) }}
+                                    </div>
+                                </div>
+                                @endif
+                                {{-- <div class="col-lg-12">
+                                    <div class="form-group">
+                                        {{ Form::label(null, trans('marketplace.book_event.form.labels.description')) }}
+                                        <div>
+                                            {!! $event->description !!}
+                                        </div>
+                                    </div>
+                                </div> --}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-inner">
+                    <h3 class="card-inner-title">
+                        {{ trans('marketplace.book_event.form.labels.description') }}
+                    </h3>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                {!! $event->description !!}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-inner">
+                    <h3 class="card-inner-title">
+                        {{ trans('marketplace.book_event.form.labels.cc_emails') }}
+                    </h3>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                    @include('admin.marketplace.add-cc-emails')
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-inner">
+                    <h3 class="card-inner-title">
+                        {{ trans('marketplace.book_event.form.labels.additional_notes') }}
+                    </h3>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                {{ Form::textarea('notes', old('notes'), ['id' => 'notes', 'rows' => 3, 'class' => 'form-control basic-format-ckeditor ignore-validation', 'placeholder' => 'Enter additional notes']) }}
+                                <div id="notes-error-cstm" style="display: none; width: 100%; margin-top: 0.25rem; font-size: 80%; color: #dc3545;">
+                                    The notes field may not be greater than 500 characters.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-inner">
+                    <h3 class="card-inner-title">
+                        {{ trans('marketplace.book_event.form.labels.email_notes') }}
+                    </h3>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                {{ Form::textarea('email_notes', old('email_notes'), ['id' => 'email_notes', 'rows' => 3, 'class' => 'form-control basic-format-ckeditor ignore-validation', 'placeholder' => 'Enter email notes']) }}
+                                <div id="email_notes-error-cstm" style="display: none; width: 100%; margin-top: 0.25rem; font-size: 80%; color: #dc3545;">
+                                    The email notes field may not be greater than 500 characters.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-inner">
+                    {{-- <div class="row">
+                        <div class="col-lg-12">
+                            <div class="form-group">
+                                    @include('admin.marketplace.add-cc-emails')
+                            </div>
+                        </div>
+                    </div> --}}
+                    <div class="row">
+                        {{-- <div class="col-lg-12">
+                            <div class="form-group ">
+                                {{ Form::label('notes', trans('marketplace.book_event.form.labels.additional_notes')) }}
+                                {{ Form::textarea('notes', old('notes'), ['id' => 'notes', 'rows' => 3, 'class' => 'form-control basic-format-ckeditor ignore-validation', 'placeholder' => 'Enter additional notes']) }}
+                                <div id="notes-error-cstm" style="display: none; width: 100%; margin-top: 0.25rem; font-size: 80%; color: #dc3545;">
+                                    The notes field may not be greater than 500 characters.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="form-group ">
+                                {{ Form::label('email_notes', trans('marketplace.book_event.form.labels.email_notes')) }}
+                                {{ Form::textarea('email_notes', old('email_notes'), ['id' => 'email_notes', 'rows' => 3, 'class' => 'form-control basic-format-ckeditor ignore-validation', 'placeholder' => 'Enter email notes']) }}
+                                <div id="email_notes-error-cstm" style="display: none; width: 100%; margin-top: 0.25rem; font-size: 80%; color: #dc3545;">
+                                    The email notes field may not be greater than 500 characters.
+                                </div>
+                            </div>
+                        </div> --}}
+                        <div class="col-xl-3 col-lg-6">
+                            <div class="form-group">
+                                {{ Form::label('company', trans('marketplace.book_event.form.labels.company')) }}
+                                    @if($disableCompany)
+                                    {{ Form::text('', $company->name, ['class' => 'form-control', 'disabled' => true]) }}
+                                    {{ Form::hidden('company', $company->id, ['id' => 'company']) }}
+                                    @else
+                                    {{ Form::select('company', $companies, null, ['class' => 'form-control select2', 'id' => 'company', 'placeholder' => 'Select company', 'data-placeholder' => 'Select company', 'data-disabled' => 'readonly'], $companiesAttr) }}
+                                    @endif
+                            </div>
+                        </div>
+                        {{-- <div class="col-xl-3 col-lg-6">
+                            <div class="form-group">
+                                {{ Form::label('date', trans('marketplace.book_event.form.labels.date')) }}
+                                <div class="datepicker-wrap">
+                                    {{ Form::text('date', old('date'), ['class' => 'form-control bg-white', 'placeholder' => 'Select date', 'id' => 'date', 'readonly' => true]) }}
+                                </div>
+                            </div>
+                        </div> --}}
+                        <div class="col-xl-6 col-lg-12" id="rcaEventDates" style="display: none;">
+                            <div class="row time-range">
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="form-group">
+                                        {{ Form::label('timeFrom', trans('marketplace.book_event.form.labels.time-from')) }}
+                                        {{ Form::text('timeFrom', old('timeFrom'), ['class' => 'form-control bg-white time start', 'id' => 'timeFrom', 'readonly' => true]) }}
+                                    </div>
+                                </div>
+                                <div class="col-xl-6 col-lg-6">
+                                    <div class="form-group pe-none">
+                                        {{ Form::label('timeTo', trans('marketplace.book_event.form.labels.time-to')) }}
+                                        {{ Form::text('timeTo', old('timeTo'), ['class' => 'form-control time end', 'id' => 'timeTo', 'readonly' => true]) }}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" id="rcaPresenter" style="display: none;">
+                            <div class="form-group">
+                                {{ Form::label('presenterName', trans('marketplace.book_event.form.labels.presenter_name')) }}
+                                {{ Form::text('presenterName', old('presenterName', ($event->presenter ?? null)), ['class' => 'form-control', 'id' => 'presenterName', 'placeholder' => trans('marketplace.book_event.form.placeholder.presenter_name'), 'readonly' => true]) }}
+                            </div>
+                        </div>
+                        <div class="w-100">
+                        </div>
+                        <div class="col-lg-12" id="mainPresenterList" style="display: block;">
+                            <div class="form-group">
+                                {{ Form::label('', trans('marketplace.book_event.form.labels.pick_a_time')) }}
+                                <div data-hint-block="" style="display: show;">
+                                    <span>
+                                        {{ trans('marketplace.book_event.messages.slot') }}
+                                    </span>
+                                </div>
+                                <div data-loader-block="" style="display: none;">
+                                    <span class="fa fa-spinner fa-spin ms-2">
+                                    </span>
+                                    {{ trans('marketplace.book_event.messages.loading_slots') }}
+                                </div>
+                                <div data-no-slots-block="" style="display: none;">
+                                    <span>
+                                        {{ trans('marketplace.book_event.messages.no_result_found') }}
+                                    </span>
+                                </div>
+                                <div class="owl-carousel owl-theme arrow-theme" data-slots-block="" style="display: none;"  id="time-owl-carousel">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6" style="display: none;">
+                            <div class="form-group">
+                                <label class="custom-checkbox">
+                                    {{ trans('marketplace.book_event.form.labels.register_all_users') }}
+                                    {{ Form::checkbox('register_all_users', true, old('register_all_users'), ['class' => 'form-control', 'id' => 'register_all_users']) }}
+                                    <span class="checkmark">
+                                    </span>
+                                    <span class="box-line">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        @if($showComplementaryOpt)
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="custom-checkbox">
+                                    {{ trans('marketplace.book_event.form.labels.complementary') }}
+                                    {{ Form::checkbox('is_complementary', true, old('is_complementary'), ['class' => 'form-control', 'id' => 'is_complementary']) }}
+                                    <span class="checkmark">
+                                    </span>
+                                    <span class="box-line">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        @endif
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <label class="custom-checkbox">
+                                    {{ trans('marketplace.book_event.form.labels.add_to_story') }}
+                                    {{ Form::checkbox('add_to_story', true, old('add_to_story'), ['class' => 'form-control', 'id' => 'add_to_story']) }}
+                                    <span class="checkmark">
+                                    </span>
+                                    <span class="box-line">
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="callout callout-danger" data-register-all-user-error="" style="display: none;">
+                            </div>
+                        </div>
+                        {{ Form::hidden('selectedslot', null, ['id' => 'selectedslot', 'class' => 'form-control']) }}
+                        {{ Form::hidden('selectedslot_start_time', null , ['id' => 'selectedslot_start_time', 'class' => 'form-control']) }}
+                        {{ Form::hidden('selectedslot_end_time', null , ['id' => 'selectedslot_end_time', 'class' => 'form-control']) }}
+                        {{ Form::hidden('companyType', $companyType, ['id' => 'companyType', 'class' => 'form-control']) }}
+                        {{ Form::hidden('createdCompany', ($event->company_id ?? null), ['id' => 'createdCompany', 'class' => 'form-control']) }}
+                    </div>
+                </div>
+            </div>
+            <div class="card-footer">
+                <div class="save-cancel-wrap">
+                    @permission('edit-event')
+                    @if($editBtn)
+                    <a class="btn btn-outline-primary" href="{{ route('admin.event.edit', [$event->id, 'referrer' => 'bookingPage']) }}">
+                        {{ trans('marketplace.book_event.buttons.edit_event') }}
+                    </a>
+                    @endif
+                    @endauth
+                    <button class="btn btn-primary" id="btn-book-event" type="button">
+                        {{ trans('marketplace.book_event.buttons.book') }}
+                    </button>
+                </div>
+            </div>
+            {{ Form::close() }}
+        </div>
+    </div>
+</section>
+<div class="modal fade" data-backdrop="static" data-keyboard="false" id="book-event-model-box" role="dialog" tabindex="-1">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    {{ trans('marketplace.book_event.modals.book.title') }}
+                </h5>
+                <button aria-label="Close" class="close" data-bs-dismiss="modal" type="button">
+                    <i class="fal fa-times">
+                    </i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p>
+                    {{ trans('marketplace.book_event.modals.book.message') }}
+                </p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-outline-primary" data-bs-dismiss="modal" type="button">
+                    {{ trans('buttons.general.no') }}
+                </button>
+                <button class="btn btn-primary" id="book-event-confirm" type="button">
+                    {{ trans('buttons.general.yes') }}
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+@endsection
+@section('after-scripts')
+{!! JsValidator::formRequest('App\Http\Requests\Admin\BookEventRequest','#bookEvent') !!}
+<script src="{{ asset('js/external/jquery.form.min.js?var='.rand()) }}" type="text/javascript">
+</script>
+<script src="{{ asset('assets/plugins/ckeditor5/ckeditor.js?var='.rand()) }}" type="text/javascript">
+</script>
+<script src="{{ asset('js/external/external-ckeditor.js?var='.rand()) }}" type="text/javascript">
+</script>
+<script src="{{ asset('assets/plugins/moment/moment.min.js?var='.rand()) }}" type="text/javascript">
+</script>
+<script src="{{ asset('assets/plugins/moment/moment-timezone-with-data-10-year-range.js?var='.rand()) }}" type="text/javascript">
+</script>
+<script src="{{ asset('assets/plugins/OwlCarousel2/owl.carousel.min.js?var='.rand()) }}" type="text/javascript">
+</script>
+<script src="{{ asset('assets/plugins/datepicker/bootstrap-datepicker.js?var='.rand()) }}" type="text/javascript">
+</script>
+<script src="{{ asset('assets/plugins/jonthornton-timepicker/jquery.timepicker.min.js?var='.rand()) }}" type="text/javascript">
+</script>
+<script src="{{ asset('assets/plugins/jonthornton-timepicker/jquery.datepair.min.js?var='.rand()) }}" type="text/javascript">
+</script>
+<script type="text/javascript">
+    var urls = {
+            getSlots: "{{ route('admin.marketplace.get-slot', [':event']) }}",
+            marketplace: "{{ route('admin.marketplace.index', '#bookings-tab') }}",
+        },
+        _event = "{{ $event->id }}",
+        _companyType = `{{ $companyType }}`,
+        _a = moment('2021-01-01 00:00:00'),
+        _b = moment('2021-01-01 {{ $event->duration }}'),
+        _minDiff = (_b.diff(_a, 'milliseconds', true) || 9000000),
+        _maxDuration = moment('2021-01-02 00:00:00').subtract(_minDiff + 1800000, 'ms').format('hh:mm A'),
+        _slotsCarousel,
+        _trans = {
+            bookBtn: "{{ trans('buttons.general.book') }}",
+            yesBtn: "{{ trans('buttons.general.yes') }}",
+            swr: "{{ trans('marketplace.book_event.messages.something_wrong_try_again') }}",
+            capacityError: "{{ trans('marketplace.book_event.messages.capacity_error') }}",
+        };
+</script>
+<script src="{{ mix('js/marketplace/bookEvent.js') }}">
+</script>
+@endsection

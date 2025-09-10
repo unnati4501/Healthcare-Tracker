@@ -1,0 +1,130 @@
+[{
+    "parent_id": null,
+    "name": "Onboarding",
+    "manage": 1
+}, {
+    "parent_id": 1,
+    "name": "About BMI",
+    "manage": 1
+}, {
+    "parent_id": 1,
+    "name": "Team Selection",
+    "manage": 1
+}, {
+    "parent_id": 1,
+    "name": "Audit Survey",
+    "manage": 1
+}, {
+    "parent_id": null,
+    "name": "Home",
+    "manage": 1
+}, {
+    "parent_id": 5,
+    "name": "Wellbeing Score card",
+    "manage": 1
+}, {
+    "parent_id": 5,
+    "name": "Group",
+    "manage": 1
+}, {
+    "parent_id": 5,
+    "name": "Recommendations",
+    "manage": 2
+}, {
+    "parent_id": null,
+    "name": "Challenge",
+    "manage": 2
+}, {
+    "parent_id": 9,
+    "name": "My challenges",
+    "manage": 2
+}, {
+    "parent_id": null,
+    "name": "Need Help",
+    "manage": 1
+}, {
+    "parent_id": 11,
+    "name": "FAQs",
+    "manage": 1
+}, {
+    "parent_id": 11,
+    "name": "Tech Support",
+    "manage": 1
+}, {
+    "parent_id": 11,
+    "name": "Supports",
+    "manage": 1
+}, {
+    "parent_id": null,
+    "name": "Event",
+    "manage": 2
+}, {
+    "parent_id": null,
+    "name": "EAP",
+    "manage": 2
+}, {
+    "parent_id": null,
+    "name": "Onboarding",
+    "manage": 1,
+    "group":2
+}, {
+    "parent_id": 17,
+    "name": "Audit Survey",
+    "manage": 1,
+    "group":2
+}, {
+    "parent_id": 17,
+    "name": "Goals Selection",
+    "manage": 1,
+    "group":2
+}, {
+    "parent_id": null,
+    "name": "Home Items",
+    "manage": 1,
+    "group":2
+}, {
+    "parent_id": 20,
+    "name": "Wellbeing Scorecard",
+    "manage": 1,
+    "group":2
+}, {
+    "parent_id": null,
+    "name": "Menu Items",
+    "manage": 1,
+    "group":2
+}, {
+    "parent_id": 22,
+    "name": "Masterclass",
+    "manage": 1,
+    "group":2
+}, {
+    "parent_id": 22,
+    "name": "Event",
+    "manage": 2,
+    "group":2
+}, {
+    "parent_id": 22,
+    "name": "Explore",
+    "manage": 2,
+    "group":2
+}, {
+    "parent_id": 22,
+    "name": "Digital Therapy",
+    "manage": 2,
+    "group":2
+}, {
+    "parent_id": 22,
+    "name": "Goals",
+    "manage": 2,
+    "group":2
+}, {
+    "parent_id": 22,
+    "name": "Supports",
+    "manage": 2,
+    "group":2
+}, {
+    "parent_id": 22,
+    "name": "Contact",
+    "manage": 1,
+    "group":2
+}]

@@ -1,0 +1,30 @@
+<?php declare (strict_types = 1);
+
+namespace App\Http\Collections\V31;
+
+use App\Http\Resources\V31\EAPSessionResource;
+use Illuminate\Http\Resources\Json\ResourceCollection;
+
+class EAPSessionCollection extends ResourceCollection
+{
+    /**
+     * Transform the resource collection into an array.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @return array
+     */
+    public function toArray($request)
+    {
+        return [
+            'data'          => [],
+            'session'       => EAPSessionResource::collection($this->collection),
+        ];
+    }
+
+    public function withResponse($request, $response)
+    {
+        $jsonResponse = json_decode($response->getContent(), true);
+        unset($jsonResponse['links'], $jsonResponse['meta']);
+        $response->setContent(json_encode($jsonResponse));
+    }
+}
